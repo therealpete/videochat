@@ -1,16 +1,27 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Video Chat</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+<!doctype html>
+<html lang="en">
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Video Chat Installation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="install.css">
+</head>
+
+<body class="text-center">
+  <div id="box">
+    <p>Erstelle eine Verknüpfung auf deinem Desktop um direkt einen Video-Chat zu starten.<br/> Gib dazu einen möglichst eindeutigen Konferenzraum-Namen ein.<br/> Erlaubt sind Buchstaben und Zahlen, aber keine Sonderzeichen.</p>
+    
+    <input type="text" id="room" class="form-control" placeholder="Konferenzraum" required autofocus>
+    <button disabled id="button" class="btn btn-lg btn-primary btn-block">Verknüpfung erstellen</button>
+  </div>
+  <div id="success" class="hidden">
+    <p>Die Verknüpfung wurde erfolgreich erstellt, du kannst nun direkt von deinem Desktop aus den Video-Chat starten.</p>    
+    <button id="close" class="btn btn-lg btn-primary btn-block">Beenden</button>
+  </div>
+  <script src="install.js"></script>
+</body>
+
 </html>

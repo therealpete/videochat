@@ -1,25 +1,32 @@
 const { app, BrowserWindow } = require('electron')
-const fs = require('fs');
-
 app.commandLine.appendSwitch('lang', 'DE');
 
+const room = app.commandLine.getSwitchValue('room');
 
-function createWindow () {
-  const win = new BrowserWindow({
+function createWindow() {
+  const options = {
     center: true,
     show: false,
     autoHideMenuBar: true,
-  })
+  }
 
+  if (!room) {
+    options.webPreferences = {
+      nodeIntegration: true
+    }
+  }
+
+  const win = new BrowserWindow(options)
   win.maximize()
-
   win.once('ready-to-show', () => {
     win.show()
   })
 
-  //win.loadURL('https://meet.jit.si/Pete')
-  win.loadFile('install.html')
-
+  if (room) {
+    win.loadURL('https://meet.jit.si/' + room.trim())
+  } else {
+    win.loadFile('install.html')
+  }
 }
 
 
