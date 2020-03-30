@@ -5,11 +5,14 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "pack": "electron-packager . --overwrite --out=dist"
+    "pack": "electron-packager . --overwrite --out=dist && node create-download.js"
   },
   "author": "Peter Leugner",
   "devDependencies": {
     "electron": "^8.2.0",
     "electron-packager": "^14.2.1"
+  },
+  "dependencies": {
+    "archiver": "^3.1.1"
   }
 }
