@@ -8,7 +8,7 @@ Die Applikation läuft unter Windows 7 oder 10 64Bit.
 
 # Installationsanleitung
 
-* Ladet die Datei [videochat.zip](./download/videochat.zip) herunter und entpackt sie in ein Verzeichnis eurer Wahl.
+* Ladet die Datei [videochat.zip](https://github.com/therealpete/videochat/raw/master/download/videochat.zip) herunter und entpackt sie in ein Verzeichnis eurer Wahl.
 * Startet die Anwendung mit einem Doppelklick auf videochat.exe
 * Die Anwendung fragt nun nach einem Namen des Konferenzraumes. Denkt euch einen Namen aus, denn vielleicht nicht jeder hat, jeder der den Namen kennt, kann an dem Chat teilnehmen.
 * Durch Klicken auf "Verknüpfung erstellen" wird nun ein Symbol auf dem Desktop angelegt, mit dem man direkt in den Konferenzraum kommt, ohne irgendetwas eingeben zu müssen.
