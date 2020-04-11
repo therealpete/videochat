@@ -1,8 +1,20 @@
 const data = window.process.argv.slice(-1);
 
+let api;
+
 window.addEventListener('DOMContentLoaded', () => {
-    const api = new JitsiMeetExternalAPI('meet.jit.si', {
+    api = new JitsiMeetExternalAPI('meet.jit.si', {
         roomName: data[0]
     });
-    api.executeCommand('toggleTileView');
+    api.executeCommand('displayName', 'Lotte');
+    api.once('tileViewChanged', (value) => {
+        if (!value.enabled) {
+            api.executeCommand('toggleTileView');
+        }
+    });        
+
+});
+
+window.addEventListener('beforeunload', () => {
+    api.dispose()
 });
