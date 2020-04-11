@@ -1,7 +1,8 @@
 const { app, BrowserWindow } = require('electron')
-app.commandLine.appendSwitch('lang', 'DE');
+const path = require('path')
+app.commandLine.appendSwitch('lang', 'de')
 
-const room = app.commandLine.getSwitchValue('room');
+const room = app.commandLine.getSwitchValue('room')
 
 function createWindow() {
   const options = {
@@ -16,7 +17,8 @@ function createWindow() {
     }
   } else {
     options.webPreferences = {
-      additionalArguments: room.trim()
+      preload: path.join(__dirname, 'jitsi.js'),
+      additionalArguments: [room.trim()]
     }
   }
 
