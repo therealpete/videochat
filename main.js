@@ -14,6 +14,10 @@ function createWindow() {
     options.webPreferences = {
       nodeIntegration: true
     }
+  } else {
+    options.webPreferences = {
+      additionalArguments: room.trim()
+    }
   }
 
   const win = new BrowserWindow(options)
@@ -23,7 +27,7 @@ function createWindow() {
   })
 
   if (room) {
-    win.loadURL('https://meet.jit.si/' + room.trim())
+    win.loadFile('jitsi.html')
   } else {
     win.loadFile('install.html')
   }
