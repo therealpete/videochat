@@ -5,8 +5,11 @@ let api;
 window.addEventListener('DOMContentLoaded', () => {
     api = new JitsiMeetExternalAPI('meet.jit.si', {
         roomName: data[0],
-        interfaceConfigOverwrite: {
-            DISPLAY_WELCOME_PAGE_CONTENT: false
+        configOverwrite: {
+            defaultLanguage: 'de',
+            enableWelcomePage: false,
+            prejoinPageEnabled: false,
+            enableInsecureRoomNameWarning: false
         }
     });
     
