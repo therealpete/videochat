@@ -10,8 +10,8 @@
   },
   "author": "Peter Leugner",
   "devDependencies": {
-    "archiver": "^4.0.2",
-    "electron": "^10.2.0",
-    "electron-packager": "^15.1.0"
+    "archiver": "^5.0.0",
+    "electron": "^11.0.0",
+    "electron-packager": "^15.2.0"
   }
 }
