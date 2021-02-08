@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "room": "./node_modules/.bin/electron main.js --room=12345chat09876",
-    "pack": "electron-packager . --overwrite --out=dist --ignore=download && node create-download.js"
+    "pack": "electron-packager . --overwrite --out=dist --ignore=download"
   },
   "author": "Peter Leugner",
   "devDependencies": {
