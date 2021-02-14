@@ -1,6 +1,8 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
-app.commandLine.appendSwitch('lang', 'de')
+require('@electron/remote/main').initialize()
+
+app.commandLine.appendSwitch('lang', 'de-DE')
 
 const room = app.commandLine.getSwitchValue('room')
 
@@ -13,7 +15,8 @@ function createWindow() {
 
   if (!room) {
     options.webPreferences = {
-      nodeIntegration: true
+      nodeIntegration: true,
+      enableRemoteModule: true
     }
   } else {
     options.webPreferences = {

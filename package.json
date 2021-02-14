@@ -5,13 +5,16 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "room": "./node_modules/.bin/electron main.js --room=12345chat09876",
-    "pack": "electron-packager . --overwrite --out=dist --ignore=download"
+    "room": "./node_modules/.bin/electron main.js --room=12345chat09876"
   },
   "author": "Peter Leugner",
   "devDependencies": {
     "archiver": "^5.0.0",
     "electron": "^11.0.0",
-    "electron-packager": "^15.2.0"
+    "electron-packager": "^15.2.0",
+    "electron-packager-languages": "^0.4.1"
+  },
+  "dependencies": {
+    "@electron/remote": "^1.0.4"
   }
 }
