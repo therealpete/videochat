@@ -4,14 +4,23 @@ Damit es in diesen Zeiten leichter ist mit seiner Familie in Kontakt zu bleiben,
 
 Die App bettet [Jitsi Meet](https://jitsi.org/jitsi-meet) ein, erspart aber dem User die Eingabe des Konferenzraums. Ein Benutzer mit Mobilphone oder Tablet kann auch mitchatten, hier muss dann ganz normal der Konferenzraum angegeben werden.
 
-Die Applikation läuft unter Windows 7 oder 10 64Bit.
+Die Applikation läuft unter Windows 7 oder 10 64Bit, außerdem unter Linux 64 Bit.
 
-# Installationsanleitung
+# Installationsanleitung Windows
 
 * Ladet die Datei [videochat.zip](https://github.com/therealpete/videochat/raw/master/download/videochat.zip) herunter und entpackt sie in ein Verzeichnis eurer Wahl.
 * Startet die Anwendung mit einem Doppelklick auf videochat.exe
 * Die Anwendung fragt nun nach einem Namen des Konferenzraumes. Denkt euch einen Namen aus, den vielleicht nicht jeder hat, jeder der den Namen kennt, kann an dem Chat teilnehmen.
 * Durch Klicken auf "Verknüpfung erstellen" wird nun ein Symbol auf dem Desktop angelegt, mit dem man direkt in den Konferenzraum kommt, ohne irgendetwas eingeben zu müssen.
 * Geht zum Desktop und startet den Chat.
+
+# Installationsanleitung Linux
+
+* Ladet die Datei [videochat-linux.zip](https://github.com/therealpete/videochat/raw/master/download/videochat-linux.zip) herunter und entpackt sie in ein Verzeichnis eurer Wahl.
+* Startet die Anwendung mit einem Doppelklick auf videochat
+* Die Anwendung fragt nun nach einem Namen des Konferenzraumes. Denkt euch einen Namen aus, den vielleicht nicht jeder hat, jeder der den Namen kennt, kann an dem Chat teilnehmen.
+* Durch Klicken auf "Verknüpfung erstellen" wird nun ein Symbol auf dem Desktop angelegt, mit dem man direkt in den Konferenzraum kommt, ohne irgendetwas eingeben zu müssen.
+* Geht zum Desktop und startet den Chat.
+
 
 Viel Spass!
