@@ -4,7 +4,7 @@ Damit es in diesen Zeiten leichter ist mit seiner Familie in Kontakt zu bleiben,
 
 Die App bettet [Jitsi Meet](https://jitsi.org/jitsi-meet) ein, erspart aber dem User die Eingabe des Konferenzraums. Ein Benutzer mit Mobilphone oder Tablet kann auch mitchatten, hier muss dann ganz normal der Konferenzraum angegeben werden.
 
-Die Applikation läuft unter Windows 7 oder 10 64Bit, außerdem unter Linux 64 Bit.
+Die Applikation läuft unter Windows 7 oder 10 64 Bit, außerdem unter Linux 64 Bit.
 
 # Installationsanleitung Windows
 
