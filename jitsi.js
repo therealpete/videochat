@@ -1,4 +1,4 @@
-const data = window.process.argv.slice(-1);
+const data = window.electron.data;
 
 let api;
 
