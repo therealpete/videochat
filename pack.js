@@ -5,6 +5,8 @@ packager({
     overwrite: true,
     out: 'dist',
     dir: '.',
-    ignore: 'download',
+    ignore: '(pack\.js|node_modules*|\.gitignore|download|README)',
+    asar: true,
+    extraResource: process.platform === 'linux' ? 'icon.png' : undefined,
     afterCopy: [setLanguages(['de', 'de_DE'])]
 })

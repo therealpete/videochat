@@ -64,10 +64,9 @@ ipcMain.handle('create-room', (event, name) => {
       'Terminal=false',
       'Type=Application',
       'Exec=' + app.getPath('exe') + ' --room=' + name,
-      'Path=' + app.getAppPath(),
       'Categories=Internet',
       'Comment=Video Chat ' + name,
-      'Icon=' + app.getAppPath() + '/icon.png'
+      'Icon=' +  process.resourcesPath + '/icon.png'
     ].join('\n');
     const target = app.getPath('desktop') + '/' + name + '.desktop';
     fs.writeFileSync(target, fileContents);
@@ -75,7 +74,6 @@ ipcMain.handle('create-room', (event, name) => {
   } else {
     shell.writeShortcutLink(app.getPath('desktop') + '\\' + name + '.lnk', 'create', {
       target: app.getPath('exe'),
-      cwd: app.getAppPath(),
       args: '--room=' + name,
       description: 'Video Chat ' + name
     })
